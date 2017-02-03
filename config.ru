@@ -20,5 +20,5 @@ run lambda { |env|
   lastGame = getLastGame()
   game = getGame(lastGame)
   writeLastGame(game)
-  [200, {'Content-Type'=>'text/plain'}, StringIO.new(output)]
+  [200, {'Content-Type'=>'text/plain'}, StringIO.new(game)]
 }
